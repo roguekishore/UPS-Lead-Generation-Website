@@ -1,0 +1,228 @@
+/* Footer Styles */
+
+/* Footer Container */
+.footer {
+  background-color: var(--neutral-900);
+  color: var(--white);
+}
+
+/* Main Footer */
+.footer__main {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 4rem var(--container-padding);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+/* Brand Column */
+.footer__brand {
+  grid-column: span 1;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  text-decoration: none;
+}
+
+.footer__brand-description {
+  color: var(--neutral-400);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.625;
+}
+
+/* Social Links */
+.footer__social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__social-link {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--neutral-800);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  transition: background-color var(--transition-fast);
+}
+
+.footer__social-link:hover {
+  background-color: var(--primary);
+}
+
+/* Footer Column */
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+/* Footer Links */
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer__link {
+  color: var(--neutral-400);
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: var(--primary);
+}
+
+/* Contact Info */
+.footer__contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.footer__contact-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.footer__contact-text {
+  color: var(--neutral-400);
+  font-size: 0.875rem;
+}
+
+.footer__contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--neutral-400);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer__contact-link:hover {
+  color: var(--primary);
+}
+
+/* Bottom Bar */
+.footer__bottom {
+  border-top: 1px solid var(--neutral-800);
+}
+
+.footer__bottom-inner {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 1.5rem var(--container-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__copyright {
+  color: var(--neutral-500);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.footer__legal-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer__legal-link {
+  color: var(--neutral-500);
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer__legal-link:hover {
+  color: var(--primary);
+}
+
+/* Scroll to Top Button */
+.footer__scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+  transition: all var(--transition-normal);
+}
+
+.footer__scroll-top:hover {
+  background-color: var(--primary-700);
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__bottom-inner {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .footer__copyright {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: span 1;
+  }
+}

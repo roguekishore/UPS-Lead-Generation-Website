@@ -1,13 +1,15 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* ===========================================
+   UNIVERSAL POWER SYSTEMS - MAIN STYLESHEET
+   =========================================== */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Import Global Variables & Base Styles */
+@import './styles/variables.css';
+
+/* Import Page Styles */
+@import './styles/pages.css';
+@import './styles/ProductsPage.css';
+@import './styles/ContactPage.css';
+@import './styles/ServicesPage.css';
