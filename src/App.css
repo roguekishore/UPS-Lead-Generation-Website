@@ -1,9 +1,20 @@
-/* App.css - Minimal global styles */
-/* Most styling is handled by Tailwind CSS */
+/* App.css - Global utility styles */
+/* Styling is handled by CSS custom properties defined in styles/variables.css */
 
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* App Layout */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1 1 auto;
 }
 
 /* Line clamp utilities */

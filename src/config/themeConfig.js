@@ -1,80 +1,5 @@
-// Theme Configuration for Universal Power Systems
-// Centralized design tokens and configuration
-
-export const themeConfig = {
-  // Brand Colors
-  colors: {
-    primary: '#DC2626',
-    primaryLight: '#FEF2F2',
-    primaryDark: '#B91C1C',
-    white: '#FFFFFF',
-    black: '#171717',
-    gray: {
-      50: '#FAFAFA',
-      100: '#F5F5F5',
-      200: '#E5E5E5',
-      300: '#D4D4D4',
-      400: '#A3A3A3',
-      500: '#737373',
-      600: '#525252',
-      700: '#404040',
-      800: '#262626',
-      900: '#171717',
-    },
-  },
-
-  // Typography
-  fonts: {
-    display: "'Georgia', 'Cambria', 'Times New Roman', serif",
-    body: "'Inter', system-ui, sans-serif",
-  },
-
-  // Spacing Scale
-  spacing: {
-    section: {
-      sm: '4rem',    // 64px
-      md: '6rem',    // 96px
-      lg: '8rem',    // 128px
-    },
-    container: {
-      padding: '1rem',
-      maxWidth: '80rem', // 1280px
-    },
-  },
-
-  // Breakpoints
-  breakpoints: {
-    sm: '640px',
-    md: '768px',
-    lg: '1024px',
-    xl: '1280px',
-    '2xl': '1536px',
-  },
-
-  // Animation Durations
-  animation: {
-    fast: '150ms',
-    normal: '300ms',
-    slow: '500ms',
-  },
-
-  // Border Radius
-  borderRadius: {
-    sm: '0.375rem',
-    md: '0.5rem',
-    lg: '0.75rem',
-    xl: '1rem',
-    full: '9999px',
-  },
-
-  // Shadows
-  shadows: {
-    sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
-    md: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
-    lg: '0 10px 15px -3px rgb(0 0 0 / 0.1)',
-    xl: '0 20px 25px -5px rgb(0 0 0 / 0.1)',
-  },
-};
+// Configuration for Universal Power Systems
+// Centralized company data and content
 
 // Company Information
 export const companyInfo = {
@@ -202,4 +127,3 @@ export const milestones = [
   },
 ];
 
-export default themeConfig;

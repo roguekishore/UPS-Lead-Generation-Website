@@ -16,12 +16,12 @@ function App() {
     <InquiryProvider>
       <Router>
         <ScrollToTop />
-        <div className="flex flex-col min-h-screen">
+        <div className="app-layout">
           {/* Navigation */}
           <Navbar />
 
           {/* Main Content */}
-          <div className="flex-grow">
+          <div className="app-main">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
